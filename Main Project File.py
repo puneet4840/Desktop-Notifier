@@ -26,83 +26,80 @@ t3=datetime.now()
 def Water():
     Notify(f'Drink Water   ({t})','Please Drink 2 Cups Of Water')
 def D_W():
-    while True:
-        if t2.hour==9 and t2.minute==55:
-            Water()
-        elif t2.hour==10 and t2.minute==50:
-            Water()
-        elif t2.hour==11 and t2.minute==45:
-            Water()
-        elif t2.hour==12 and t2.minute==40:
-            Water()
-        elif t2.hour==13 and t2.minute==35:
-            Water()
-        elif t2.hour==14 and t2.minute==30:
-            Water()
-        elif t2.hour==15 and t2.minute==25:
-            Water()
-        elif t2.hour==16 and t2.minute==20:
-            Water()
-        elif t2.hour==17 and t2.minute==15:
-            Water()
-        elif t2.hour==18 and t2.minute==10:
-            Water()
+    if t2.hour==9 and t2.minute==55:
+        Water()
+    elif t2.hour==10 and t2.minute==50:
+        Water()
+    elif t2.hour==11 and t2.minute==45:
+        Water()
+    elif t2.hour==12 and t2.minute==40:
+        Water()
+    elif t2.hour==13 and t2.minute==35:
+        Water()
+    elif t2.hour==14 and t2.minute==30:
+        Water()
+    elif t2.hour==15 and t2.minute==25:
+        Water()
+    elif t2.hour==16 and t2.minute==20:
+        Water()
+    elif t2.hour==17 and t2.minute==15:
+        Water()
+    elif t2.hour==18 and t2.minute==10:
+        Water()
 
 def Eyes_Exe():
     Notify(f'Eyes Exercise  ({t})',"It's Time To Do Eyes Exercise")
 def D_E():
-    while True:
-        if str(t3.hour)==9 and t3.minute==45:
-            Eyes_Exe()
-        elif t3.hour==10 and t3.minute==30:
-            Eyes_Exe()
-        elif t3.hour==11 and t3.minute==15:
-            Eyes_Exe()
-        elif t3.hour==12 and t3.minute==00:
-            Eyes_Exe()
-        elif t3.hour==00 and t3.minute==45:
-            Eyes_Exe()
-        elif t3.hour==13 and t3.minute==30:
-            Eyes_Exe()
-        elif t3.hour==14 and t3.minute==15:
-            Eyes_Exe()
-        elif t3.hour==15 and t3.minute==00:
-            Eyes_Exe()
-        elif t3.hour==15 and t3.minute==45:
-            Eyes_Exe()
-        elif t3.hour==16 and t3.minute==30:
-            Eyes_Exe()
-        elif t3.hour==17 and t3.minute==15:
-            Eyes_Exe()
-        elif t3.hour==18 and t3.minute==00:
-            Eyes_Exe()
-        elif t3.hour==18 and t3.minute==45:
-            Eyes_Exe()
+    if str(t3.hour)==9 and t3.minute==45:
+        Eyes_Exe()
+    elif t3.hour==10 and t3.minute==30:
+        Eyes_Exe()
+    elif t3.hour==11 and t3.minute==15:
+        Eyes_Exe()
+    elif t3.hour==12 and t3.minute==00:
+        Eyes_Exe()
+    elif t3.hour==00 and t3.minute==45:
+        Eyes_Exe()
+    elif t3.hour==13 and t3.minute==30:
+        Eyes_Exe()
+    elif t3.hour==14 and t3.minute==15:
+        Eyes_Exe()
+    elif t3.hour==15 and t3.minute==00:
+        Eyes_Exe()
+    elif t3.hour==15 and t3.minute==45:
+        Eyes_Exe()
+    elif t3.hour==16 and t3.minute==30:
+        Eyes_Exe()
+    elif t3.hour==17 and t3.minute==15:
+        Eyes_Exe()
+    elif t3.hour==18 and t3.minute==00:
+        Eyes_Exe()
+    elif t3.hour==18 and t3.minute==45:
+        Eyes_Exe()
 
 
 def Phy_Exe():
     Notify(f"Physical Exercise   ({t})","It's Time To Do Some Physical Exercise")
 
 def D_PE():
-    while True:
-        if t3.hour==10 and t3.minute==10:
-            Phy_Exe()
-        elif t3.hour==11 and t3.minute==9:
-            Phy_Exe()
-        elif t3.hour==12 and t3.minute==8:
-            Phy_Exe()
-        elif t3.hour==13 and t3.minute==1:
-            Phy_Exe()
-        elif t3.hour==14 and t3.minute==5:
-            Phy_Exe()
-        elif t3.hour==15 and t3.minute==4:
-            Phy_Exe()
-        elif t3.hour==16 and t3.minute==6:
-            Phy_Exe()
-        elif t3.hour==17 and t3.minute==7:
-            Phy_Exe()
-        elif t3.hour==18 and t3.minute==22:
-            Phy_Exe()
+    if t3.hour==10 and t3.minute==10:
+        Phy_Exe()
+    elif t3.hour==11 and t3.minute==9:
+        Phy_Exe()
+    elif t3.hour==12 and t3.minute==8:
+        Phy_Exe()
+    elif t3.hour==13 and t3.minute==1:
+        Phy_Exe()
+    elif t3.hour==14 and t3.minute==5:
+        Phy_Exe()
+    elif t3.hour==15 and t3.minute==4:
+        Phy_Exe()
+    elif t3.hour==16 and t3.minute==6:
+        Phy_Exe()
+    elif t3.hour==17 and t3.minute==7:
+        Phy_Exe()
+    elif t3.hour==18 and t3.minute==22:
+        Phy_Exe()
 
 def News():
     url="https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=52afef4f44314099adb8a2b5841009df"
@@ -121,17 +118,16 @@ def News():
 
 def get_n():
     time1=datetime.now()
-    while True:
-        if time1.hour==10 and time1.minute==2:
-            News()
-        elif time1.hour==12 and time1.minute==2:
-            News()
-        elif time1.hour==14 and time1.minute==2:
-            News()
-        elif time1.hour==16 and time1.minute==2:
-            News()
-        elif time1.hour==17 and time1.minute==2:
-            News()
+    if time1.hour==10 and time1.minute==2:
+        News()
+    elif time1.hour==12 and time1.minute==2:
+        News()
+    elif time1.hour==14 and time1.minute==2:
+        News()
+    elif time1.hour==16 and time1.minute==2:
+        News()
+    elif time1.hour==17 and time1.minute==2:
+        News()
 
 def temperature():
     app_id='JE47GT-G2l459KLh6'
@@ -142,17 +138,16 @@ def temperature():
 
 def get_temp():
     time4=datetime.now()
-    while True:
-        if time4.hour==9 and time4.minute==10:
-            temperature()
-        elif time4.hour==11 and time4.minute==11:
-            temperature()
-        elif time4.hour==13 and time4.minute==13:
-            temperature()
-        elif time4.hour==15 and time4.minute==15:
-            temperature()
-        elif time4.hour==16 and time4.minute==16:
-            temperature()
+    if time4.hour==9 and time4.minute==10:
+        temperature()
+    elif time4.hour==11 and time4.minute==11:
+        temperature()
+    elif time4.hour==13 and time4.minute==13:
+        temperature()
+    elif time4.hour==15 and time4.minute==15:
+        temperature()
+    elif time4.hour==16 and time4.minute==16:
+        temperature()
 
 def Covid_19():
     try:
@@ -192,9 +187,8 @@ def Covid_19():
 
 def get_co():
     time2=datetime.now()
-    while True:
-        if time2.hour==10 and time2.minute==10:
-            Covid_19()
+    if time2.hour==10 and time2.minute==10:
+        Covid_19()
 
 
 if __name__ == "__main__":
